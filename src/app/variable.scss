@@ -1,0 +1,32 @@
+$--bg: #fff;
+$--onBg0: #000;
+$--on-bg-40-icon: #5c5f63;
+$--onBg60: #7f828a;
+$--onBg70: #d3d7db;
+$--primary: #4852ec;
+$--primaryContainer: #b4b7ed;
+$--error: #ba1a1a;
+$--errorContainer: #ffdad6;
+$--hover: #4437d7;
+$--onErrorContainer: #410002;
+$--surface: #f5f5f6;
+$--onSurface10: #272829;
+$--onSurface30: #46464f;
+$--line: #777680;
+$--line1---bold: #b9b7c3;
+$--subSurface: #b4bac8;
+$--disabled: #d1d3d7;
+$--subSurface2: #7e848f;
+$--onDisabled: #a4a7ac;
+$--kakao-color: #fee500;
+$--full_bg: #ececef;
+$--line-2---light: #e5e3ec;
+$--dimed: rgba(0, 0, 0, 0.55);
+$--snack-bar: linear-gradient(90deg, #3526e1 0%, #09cdaf 100%);
+
+$--small: 8px;
+$--medium: 16px;
+
+$--safe-area-top: env(safe-area-inset-top);
+$--safe-area-bottom: env(safe-area-inset-bottom);
+$--100vh: calc(var(--vh, 1vh) * 100);
