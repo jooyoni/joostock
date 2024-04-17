@@ -1,5 +1,5 @@
 export default interface IPegrRankType {
-  logoUrl: string | undefined;
+  logoUrl: string;
   ticker: string;
   companyName: string;
   per: string;

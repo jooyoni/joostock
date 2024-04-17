@@ -1,0 +1,19 @@
+.stockTable {
+  width: 100%;
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+  td:nth-child(2) {
+    text-align: left;
+  }
+  .stockRow {
+    cursor: pointer;
+  }
+}
+.logoWrap {
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
