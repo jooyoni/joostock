@@ -2,16 +2,17 @@
 import IPegrRankType from '@/types/pegrRankType';
 import styles from './page.module.scss';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import Loading from '@/components/Loading/Loading';
 import Logo from '@/components/Logo/Logo';
 import Image from 'next/image';
+import Header from '@/components/Header/Header';
+import { axiosInstance } from './axios/axiosInstance';
 
 export default function Home() {
   const [stocks, setStocks] = useState<IPegrRankType[]>();
   useEffect(() => {
     (async () => {
-      const res = await axios.get('/api/stock/rank').then((res) => res.data);
+      const res = await axiosInstance.get('/api/stock/rank').then((res) => res.data);
       setStocks(res.data);
     })();
   }, []);
@@ -21,7 +22,7 @@ export default function Home() {
   }
   return (
     <main className={styles.main}>
-      <Logo />
+      <Header />
       {stocks ? (
         <table className={styles.stockTable}>
           <thead>
@@ -44,7 +45,7 @@ export default function Home() {
                       priority
                       style={{ objectFit: 'contain' }}
                       fill
-                      sizes={'100px'}
+                      sizes={'50px'}
                     />
                   </div>
                 </td>
