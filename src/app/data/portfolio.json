@@ -1,6 +1,1 @@
-{
-  "portfolio": [
-    { "ticker": "NNDM", "name": "Nano Dimension Ltd.", "unitPrice": 3.4405, "count": 5216, "nowPrice": 2.59 },
-    { "ticker": "BKYI", "name": "BIO-key International, Inc.", "unitPrice": 2.0097, "count": 367, "nowPrice": 1.9435 }
-  ]
-}
+{"portfolio":[{"ticker":"NNDM","name":"Nano Dimension Ltd.","unitPrice":3.4405,"count":5216,"nowPrice":2.25},{"ticker":"BKYI","name":"BIO-key International, Inc.","unitPrice":2.0097,"count":367,"nowPrice":1.53}]}

@@ -1,8 +1,7 @@
-import { NextApiRequest } from 'next';
 import cheerio from 'cheerio';
 import axios from 'axios';
 
-export async function GET(req: NextApiRequest) {
+export async function GET(req: Request) {
   const HTML = await axios.get(
     'https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%ED%99%98%EC%9C%A8'
   );

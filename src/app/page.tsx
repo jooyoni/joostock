@@ -27,7 +27,7 @@ export default function Home() {
         <table className={styles.stockTable}>
           <thead>
             <tr>
-              <th width='120px'>LOGO</th>
+              <th>LOGO</th>
               <th>NAME</th>
               <th>TICKER</th>
               <th>PEGR</th>

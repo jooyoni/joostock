@@ -1,11 +1,10 @@
-import { NextApiRequest } from 'next';
 import cheerio from 'cheerio';
 import IPegrRankType from '@/types/pegrRankType';
 import axios from 'axios';
 
 let cacheData: IPegrRankType[] = [];
 let lastFetchTime = new Date().getTime();
-export async function GET(req: NextApiRequest) {
+export async function GET(req: Request) {
   const refetch = new Date().getTime() - lastFetchTime > 1000 * 60 * 5 || !cacheData.length;
   const PEGR_RANK_ARRAY: IPegrRankType[] = [];
   const PEGR_RANK_HTML = await axios.get('https://www.marketbeat.com/market-data/low-pe-growth-stocks/');
